@@ -12,6 +12,8 @@
 		A65B715E1CC7E87D008E78AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65B715C1CC7E87D008E78AD /* Main.storyboard */; };
 		A65B71601CC7E87D008E78AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65B715F1CC7E87D008E78AD /* Assets.xcassets */; };
 		A65B71631CC7E87D008E78AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65B71611CC7E87D008E78AD /* LaunchScreen.storyboard */; };
+		A6D0A1C01CC7EAB500760B33 /* productViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0A1BF1CC7EAB500760B33 /* productViewController.swift */; };
+		A6D0A1C21CC7F29A00760B33 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D0A1C11CC7F29A00760B33 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A65B715F1CC7E87D008E78AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65B71621CC7E87D008E78AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65B71641CC7E87D008E78AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D0A1BF1CC7EAB500760B33 /* productViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = productViewController.swift; sourceTree = "<group>"; };
+		A6D0A1C11CC7F29A00760B33 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A65B715F1CC7E87D008E78AD /* Assets.xcassets */,
 				A65B71611CC7E87D008E78AD /* LaunchScreen.storyboard */,
 				A65B71641CC7E87D008E78AD /* Info.plist */,
+				A6D0A1BF1CC7EAB500760B33 /* productViewController.swift */,
+				A6D0A1C11CC7F29A00760B33 /* ContactViewController.swift */,
 			);
 			path = NewAdventureTest;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D0A1C01CC7EAB500760B33 /* productViewController.swift in Sources */,
+				A6D0A1C21CC7F29A00760B33 /* ContactViewController.swift in Sources */,
 				A65B715B1CC7E87C008E78AD /* ViewController.swift in Sources */,
 				A65B71591CC7E87C008E78AD /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +294,7 @@
 				A65B71691CC7E87D008E78AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
