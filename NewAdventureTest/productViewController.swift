@@ -12,9 +12,11 @@ class productViewController: UIViewController {
 
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
+    
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         productNameLabel.text = "A New Adventure"
         productImageView.image = UIImage(named: "IMG_4131")
 
