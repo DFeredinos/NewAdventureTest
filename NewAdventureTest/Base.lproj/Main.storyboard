@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Product View Controller-->
@@ -17,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-t5-3vJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-t5-3vJ">
                                 <rect key="frame" x="2" y="5" width="370" height="555"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Idea Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2l-vV-i72">
-                                <rect key="frame" x="0.0" y="66" width="375" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idea Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2l-vV-i72">
+                                <rect key="frame" x="128" y="66" width="120" height="35"/>
                                 <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="redraw" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59j-Rs-RAW">
-                                <rect key="frame" x="-515" y="-107" width="1228" height="1224"/>
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59j-Rs-RAW">
+                                <rect key="frame" x="24" y="478" width="148" height="34"/>
                                 <state key="normal" title="Click here for Fun!"/>
                                 <connections>
                                     <action selector="clickForFunPressed:" destination="ktR-MD-ROA" eventType="touchUpInside" id="0DI-Nj-4W4"/>
@@ -36,6 +37,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v6L-t5-3vJ" firstAttribute="top" secondItem="Ov9-UT-Wtt" secondAttribute="topMargin" constant="5" id="9tu-II-WbS"/>
+                            <constraint firstItem="v6L-t5-3vJ" firstAttribute="leading" secondItem="Ov9-UT-Wtt" secondAttribute="leadingMargin" constant="-14" id="Nab-V6-ciR"/>
+                            <constraint firstItem="hcq-Xy-Tsf" firstAttribute="top" secondItem="v6L-t5-3vJ" secondAttribute="bottom" constant="107" id="Os6-yL-see"/>
+                            <constraint firstItem="59j-Rs-RAW" firstAttribute="centerX" secondItem="Ov9-UT-Wtt" secondAttribute="centerX" constant="-89.5" id="Vdy-xQ-1bh"/>
+                            <constraint firstItem="59j-Rs-RAW" firstAttribute="centerY" secondItem="Ov9-UT-Wtt" secondAttribute="centerY" constant="161.5" id="Zik-nc-yNX"/>
+                            <constraint firstItem="v6L-t5-3vJ" firstAttribute="centerX" secondItem="Ov9-UT-Wtt" secondAttribute="centerX" id="fsE-iC-VMf"/>
+                            <constraint firstItem="O2l-vV-i72" firstAttribute="top" secondItem="clC-qg-vXC" secondAttribute="bottom" constant="46" id="gvV-96-0HA"/>
+                            <constraint firstItem="O2l-vV-i72" firstAttribute="centerY" secondItem="Ov9-UT-Wtt" secondAttribute="centerY" constant="-250" id="oWh-oL-4Lr"/>
+                            <constraint firstItem="O2l-vV-i72" firstAttribute="centerX" secondItem="Ov9-UT-Wtt" secondAttribute="centerX" id="xMY-zf-qby"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -45,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgx-dA-BI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146.5" y="362.5"/>
+            <point key="canvasLocation" x="-130.5" y="362.5"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="QuN-4e-d0a">
@@ -121,7 +133,7 @@ THERE IS A BUNCH MORE TEXT HERE BLAH BLAH BLAH BLAH</string>
                     </subviews>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="553.5" y="362.5"/>
+            <point key="canvasLocation" x="782.5" y="107.5"/>
         </scene>
     </scenes>
     <resources>
