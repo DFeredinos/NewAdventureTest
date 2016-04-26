@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -78,45 +79,56 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7j-DN-R4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" maximumZoomScale="0.0" id="t4b-J7-0TO">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="0.0" id="t4b-J7-0TO">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GOPR0004" translatesAutoresizingMaskIntoConstraints="NO" id="2Gh-UZ-JvQ">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GOPR0004" translatesAutoresizingMaskIntoConstraints="NO" id="2Gh-UZ-JvQ">
                             <rect key="frame" x="0.0" y="25" width="375" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="9oT-XA-qfd"/>
+                                <constraint firstAttribute="width" secondItem="2Gh-UZ-JvQ" secondAttribute="height" multiplier="375:128" id="T4P-aV-mRv"/>
+                                <constraint firstAttribute="width" constant="375" id="ZPb-J7-gww"/>
+                            </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUp-Tr-bwi">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUp-Tr-bwi">
                             <rect key="frame" x="0.0" y="184" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="FRd-Ur-YpY"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-Ay-hVd">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-Ay-hVd">
                             <rect key="frame" x="-8" y="296" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="FZJ-yp-yYI"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-RC-HHK">
-                            <rect key="frame" x="0.0" y="415" width="375" height="21"/>
-                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B A N A N A S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgV-Ek-TxV">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="B A N A N A S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgV-Ek-TxV">
                             <rect key="frame" x="63" y="238" width="249" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="f3t-26-qgc"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B A N A N A S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-fd-XKi">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="B A N A N A S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-fd-XKi">
                             <rect key="frame" x="63" y="355" width="249" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="4O0-hy-sPy"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-UW-YiD">
-                            <rect key="frame" x="71" y="455" width="241" height="298"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-UW-YiD">
+                            <rect key="frame" x="71" y="455" width="241" height="264"/>
                             <string key="text">Let me begin by saying thank you to you and the team for the great experience I've had here at Nordstrom. Everyday I'm personally amazed by the amount of care and service that every employee receives, it's no wonder that Nordstrom has maintained a spot in the top ten companies to work for.
 THERE IS A BUNCH MORE TEXT HERE BLAH BLAH BLAH BLAH</string>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -124,13 +136,41 @@ THERE IS A BUNCH MORE TEXT HERE BLAH BLAH BLAH BLAH</string>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-90-G4l">
-                            <rect key="frame" x="0.0" y="290" width="46" height="30"/>
+                            <rect key="frame" x="19" y="0.0" width="46" height="30"/>
                             <state key="normal" title="Back"/>
                             <connections>
                                 <segue destination="ktR-MD-ROA" kind="show" id="BdM-E0-k2V"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This shit is bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-RC-HHK">
+                            <rect key="frame" x="0.0" y="415" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="btE-zi-77c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="hgZ-fd-XKi" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="3XR-bt-wZ9"/>
+                        <constraint firstAttribute="trailing" secondItem="rWd-UW-YiD" secondAttribute="trailing" constant="63" id="7im-32-0ic"/>
+                        <constraint firstItem="vTQ-Ay-hVd" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="AuP-yn-m7r"/>
+                        <constraint firstItem="pgV-Ek-TxV" firstAttribute="top" secondItem="sUp-Tr-bwi" secondAttribute="bottom" constant="33" id="BQJ-uS-d94"/>
+                        <constraint firstItem="rWd-UW-YiD" firstAttribute="leading" secondItem="t4b-J7-0TO" secondAttribute="leading" constant="71" id="EVa-vp-kSF"/>
+                        <constraint firstItem="rWd-UW-YiD" firstAttribute="top" secondItem="Cds-RC-HHK" secondAttribute="bottom" constant="19" id="Q4t-mv-kQU"/>
+                        <constraint firstItem="sUp-Tr-bwi" firstAttribute="top" secondItem="2Gh-UZ-JvQ" secondAttribute="bottom" constant="31" id="QSc-j5-oD8"/>
+                        <constraint firstAttribute="bottom" secondItem="2Gh-UZ-JvQ" secondAttribute="bottom" constant="514" id="VU1-IZ-eIv"/>
+                        <constraint firstItem="Cds-RC-HHK" firstAttribute="top" secondItem="hgZ-fd-XKi" secondAttribute="bottom" constant="33" id="XjH-DM-bq9"/>
+                        <constraint firstItem="pgV-Ek-TxV" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="av4-KH-Wo6"/>
+                        <constraint firstItem="2Gh-UZ-JvQ" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="avs-w1-L3x"/>
+                        <constraint firstItem="vTQ-Ay-hVd" firstAttribute="top" secondItem="pgV-Ek-TxV" secondAttribute="bottom" constant="31" id="jOg-Sr-mzn"/>
+                        <constraint firstItem="Cds-RC-HHK" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="nC3-hE-FCg"/>
+                        <constraint firstItem="2Gh-UZ-JvQ" firstAttribute="top" secondItem="t4b-J7-0TO" secondAttribute="top" constant="25" id="qKb-bc-0O5"/>
+                        <constraint firstItem="sUp-Tr-bwi" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" id="qRp-na-yi9"/>
+                        <constraint firstItem="hgZ-fd-XKi" firstAttribute="top" secondItem="vTQ-Ay-hVd" secondAttribute="bottom" constant="38" id="qgx-tm-PoZ"/>
+                        <constraint firstItem="rWd-UW-YiD" firstAttribute="centerX" secondItem="t4b-J7-0TO" secondAttribute="centerX" constant="4" id="tTA-Lw-lOb"/>
+                    </constraints>
                 </scrollView>
             </objects>
             <point key="canvasLocation" x="782.5" y="107.5"/>

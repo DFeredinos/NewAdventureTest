@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@IBDesignable
 class productViewController: UIViewController {
 
     @IBOutlet weak var productNameLabel: UILabel!

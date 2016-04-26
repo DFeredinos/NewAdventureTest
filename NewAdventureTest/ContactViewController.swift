@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@IBDesignable
 class ContactViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
 
@@ -22,6 +22,9 @@ class ContactViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         scrollView.contentSize = CGSizeMake(375, 900)
+        
     }
    
 }
+
+
